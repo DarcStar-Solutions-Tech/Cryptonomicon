@@ -1,22 +1,40 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
     "declaration": true,
     "declarationMap": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es6"],
-    "module": "commonjs",
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["es6", "dom", "esnext"],
+    "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": true,
+    "noEmit": true,
+    "paths": {
+      "components/*": ["src/components/*"],
+      "constants/*": ["src/constants/*"],
+      "generated/*": ["src/generated/*"],
+      "hooks/*": ["src/hooks/*"],
+      "lib/*": ["src/lib/*"],
+      "state/*": ["src/state/*"],
+      "themes/*": ["src/themes/*"],
+      "typechain/*": ["typechain/*"],
+      "types/*": ["src/types/*"]
+    },
     "removeComments": true,
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es6"
+    "target": "ESNext"
   },
   "exclude": ["node_modules"],
   "files": ["./hardhat.config.ts"],
-  "include": ["tasks/**/*", "test/**/*", "types/**/*"]
+  "include": ["tasks/**/*", "test/**/*", "typechain/**/*", "next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

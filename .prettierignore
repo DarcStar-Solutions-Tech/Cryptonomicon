@@ -3,13 +3,14 @@
 **/.coverage_artifacts
 **/.coverage_cache
 **/.coverage_contracts
+**/.next
 **/artifacts
 **/build
 **/cache
 **/coverage
 **/dist
 **/node_modules
-**/types
+**/typechain
 
 # files
 *.env
