@@ -3,8 +3,6 @@ pragma solidity >=0.8.4;
 
 import "hardhat/console.sol";
 
-error GreeterError();
-
 contract Greeter {
     string public greeting;
 
@@ -13,16 +11,12 @@ contract Greeter {
         greeting = _greeting;
     }
 
-    function greet() public view returns (string memory) {
+    function greet() external view returns (string memory) {
         return greeting;
     }
 
-    function setGreeting(string memory _greeting) public {
-        console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);
-        greeting = _greeting;
-    }
-
-    function throwError() external pure {
-        revert GreeterError();
+    function setGreeting(string memory greeted) external {
+        console.log("Changing greeting from '%s' to '%s'", greeting, greeted);
+        greeting = greeted;
     }
 }

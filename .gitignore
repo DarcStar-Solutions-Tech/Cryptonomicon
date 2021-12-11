@@ -20,6 +20,9 @@
 /.next/
 /out/
 
+# OpenZeppelin
+.openzeppelin/unknown-*.json
+
 
 # files
 *.env
