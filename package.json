@@ -53,7 +53,7 @@
     "chakra-ui-markdown-renderer": "^4.0.0",
     "formik": "^2.2.9",
     "framer-motion": "^5.3.3",
-    "moralis": "^0.0.135",
+    "moralis": "^1.0.0",
     "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
